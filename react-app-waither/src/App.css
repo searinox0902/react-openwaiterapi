@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+  @apply bg-gray-100;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  @apply text-gray-700;
+}
+
+p, button, a, ul, li, ol, caption, label, input{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+h1 {
+  @apply text-sm font-bold text-gray-700 text-center pt-4;
+}
+
+.dev-description{
+  @apply text-gray-700 text-center text-xs;
+}
+
+
+/* card info */
+
+
+.card-info{
+  @apply w-full  bg-white rounded-xl my-6 p-6 shadow-lg border border-gray-100; 
+}
+
+.card__content-info {
+  @apply  text-xl text-start w-1/2;
+}
+
+.card__content-image{
+  @apply w-1/2;
+}
+
+.card__city-name{
+  @apply mt-12 text-center text-2xl font-bold;
+}
+
+.card__date {
+  @apply  text-gray-500 text-sm ;
+}
+
+.card__temp {
+  @apply  text-6xl font-bold my-4;
+}
+
+.card__temp-max{
+  @apply text-sm mb-2 font-bold text-red-600;
+}
+
+.card__temp-min{
+  @apply text-sm font-bold text-blue-600;
+}
+
+
+
+/* form */
+
+/* dev description */
