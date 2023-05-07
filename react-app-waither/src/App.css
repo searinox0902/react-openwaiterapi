@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  @apply bg-gray-100;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  @apply text-gray-700;
+}
+
+p, button, a, ul, li, ol, caption, label, input{
+  font-family: 'Montserrat', sans-serif;
+  @apply text-gray-700;
+}
+
+/* Header */
+
+h1 {
+  @apply text-sm font-bold text-gray-700 text-center;
+}
+
+.dev-description{
+  @apply text-gray-700 text-center text-xs;
+}
+
+
+/* card info */
+
+
+.card-info{
+  @apply w-full bg-white rounded-xl mt-4 mb-12 p-6 shadow-lg border border-gray-100 flex items-center; 
+}
+
+.card__content-info {
+  @apply  text-xl text-start w-1/2;
+}
+
+.card__content-image{
+  @apply w-1/2;
+}
+
+.card__city-name{
+  @apply text-center text-2xl font-bold;
+}
+
+.card__date {
+  @apply  text-gray-500 text-sm ;
+}
+
+.card__temp {
+  @apply  text-6xl font-bold my-4 flex items-start;
+}
+
+.card__temp::after, .card__temp-max::after, .card__temp-min::after {
+  content: '℃';
+  display: inline;
+  font-size: 12px;
+}
+
+.card__temp-max::after, .card__temp-min::after {
+  font-size: 8px;
+}
+
+.card__temp-max{
+  @apply text-sm mb-2 font-bold text-red-600 flex items-start;;
+}
+
+.card__temp-min{
+  @apply text-sm font-bold text-blue-600 flex items-start;;
+}
+
+
+
+
+
+/* form */
+
+.form-wrapper{
+  @apply space-y-4;
+}
+
+.input-wrapper {
+  @apply space-y-4 flex flex-col;
+}
+
+.label{
+  @apply  font-bold pl-3;
+}
+
+.input{
+  @apply px-4 py-3 shadow-lg rounded-xl;
+}
+
+.input-select{
+  @apply px-4 py-3 rounded-xl shadow-xl;
+ 
+}
+
+.input-select::after{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+/* dev description */
